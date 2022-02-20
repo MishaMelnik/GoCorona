@@ -1,0 +1,129 @@
+.get-started {
+  background-color: #fafbfd;
+  padding: 150px 15px 50px 15px;
+  @media (max-width: 767.98px) {
+    padding: 100px 15px 30px 15px;
+  }
+  // .get-started__container
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+  }
+
+  // .get-started__content
+  &__content {
+    flex: 0 1 48%;
+    padding: 0 20px;
+    @media (max-width: 767.98px) {
+      flex: 1 1 100%;
+      padding: 0;
+    }
+  }
+
+  // .get-started__block-text
+  &__block-text {
+    max-width: 410px;
+    @media (max-width: 767.98px) {
+      max-width: none;
+    }
+  }
+
+  // .get-started__image
+  &__image {
+    flex: 0 1 52%;
+    @media (max-width: 767.98px) {
+      flex: 1 1 100%;
+      text-align: center;
+      padding: 30px 0;
+    }
+    >img{
+      max-width: 100%;
+    }
+  }
+
+  // .get-started__video
+  &__video {
+    flex: 1 1 100%;
+    padding: 60px 0 0 20px;
+    @media (max-width: 767.98px) {
+      padding: 0;
+    }
+  }
+}
+
+.block-text {
+
+  // .block-text__title
+  &__title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 126%;
+    color: black;
+    @media (max-width: 767.98px) {
+      font-size: 34px;
+    }
+    >span{
+      color: #ec5863;
+    }
+    &:not(:last-child){
+      margin: 0 0 12px 0;
+    }
+    // .block-text__title_blue
+    &_blue {
+      >span{
+        color: #4285f4;
+      }
+    }
+  }
+
+  // .block-text__text
+  &__text {
+    line-height: 138.5%;
+    &:not(:last-child){
+      margin: 0 0 24px 0;
+    }
+  }
+
+  // .block-text__button
+  &__button {
+  }
+}
+
+.button {
+}
+
+.video-get-started {
+  display: inline-flex;
+  align-items: center;
+  // .video-get-started__icon
+  &__icon {
+    flex: 0 0 44px;
+  }
+
+  // .video-get-started__body
+  &__body {
+    padding: 0 0 0 12px;
+    &:not(:last-child){
+      margin: 0 0 5px 0;
+    }
+  }
+
+  // .video-get-started__title
+  &__title {
+    color: #b0b0b0;
+    font-size: 13px;
+    line-height: 126%;
+    letter-spacing: 1.5px;
+  }
+
+  // .video-get-started__text
+  &__text {
+    text-transform: uppercase;
+    font-size: 9px;
+    color: black;
+    line-height: 126%;
+    letter-spacing: 2px;
+  }
+}
